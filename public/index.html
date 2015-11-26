@@ -1,0 +1,119 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" ng-app="Mean">
+  <head>
+
+    <title>Mean Seed</title>
+
+    <!--SO Meta -__- --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='keywords' content=''/>
+    <meta name='author' content='Alan Michaan'/>
+    <meta name='description' content=''/>
+    <meta property='og:url' content=''/>
+    <meta property='og:title' content=""/>
+    <meta property='og:description' content=""/>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./bower_components/materialize/dist/css/materialize.min.css" >
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- Load Jquery and Angular with Bower. -->
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- Materialize -->
+    <script type="text/javascript" src="./bower_components/materialize/dist/js/materialize.min.js"></script>
+
+    <!-- Basic Angular App -->
+    <script type="text/javascript" src="app.js"></script>
+   
+    <!-- Controllers -->
+    <script type="text/javascript" src="controllers/loginController.js"></script>
+
+
+  </head>
+  <body ng-controller="mainController">
+    <!-- angular injection -->
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons"></i></label>
+          <i class="material-icons"></i>
+        </div>
+      </form>
+
+    </div>
+  </nav>
+
+
+
+  <br>
+
+   <div class="container">
+      <div class="row">
+        <div class="col s3" style="bg-color=blue">
+
+<!--          
+  $('#input_text').val('New Text');
+  $('#input_text').trigger('autoresize'); -->
+
+        </div>
+        <div class="col s9">
+             <div class="card #e8eaf6 indigo lighten-5">
+            <div class="card-content white-text">
+              <span class="card-title"></span>
+              <p>
+
+            <form>
+              <p>
+                <input type="checkbox" id="twtr" checked="checked" />
+                <label for="twtr">Twitter</label>
+              </p>
+              <p>
+                <input type="checkbox" id="ig" checked="checked" />
+                <label for="ig">Instagram</label>
+              </p>
+              <p>
+                <input type="checkbox" id="fb" checked="checked" />
+                <label for="fb">Facebook</label>
+              </p>
+
+             <input id="input_text" type="text" length="140" style="color:black;">
+           <!--  <label for="input_text">Input text</label>
+ -->
+          
+
+
+           </form> 
+
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+       
+
+        </div>
+    </div>
+   </div
+
+
+    <div ng-view class="view-container"></div>
+
+
+
+  </body>
+
+
+</html>
